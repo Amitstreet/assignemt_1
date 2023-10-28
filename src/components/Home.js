@@ -4,10 +4,15 @@ import SingleProduct from "./SingleProduct";
 
 const Home = () => {
   const {
-    state: { products },
-    productState: { sort, byStock, byFastDelivery, byRating, searchQuery },
+    state,
+    productState
   } = CartState();
+  
+  
+  const {products}= state;
+  const { sort, byStock, byFastDelivery, byRating, searchQuery }= productState
 
+  
   const transformProducts = () => {
     let sortedProducts = products;
 

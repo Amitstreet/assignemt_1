@@ -6,9 +6,13 @@ import Rating from "./Rating";
 
 const Cart = () => {
   const {
-    state: { cart },
+    state,
     dispatch,
   } = CartState();
+
+
+  let {cart} = state;
+  console.log(cart);
   const [total, setTotal] = useState();
 
   useEffect(() => {
@@ -17,6 +21,7 @@ const Cart = () => {
     );
   }, [cart]);
 
+  
   return (
     <div className="home">
       <div className="productContainer">

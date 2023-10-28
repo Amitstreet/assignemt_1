@@ -8,6 +8,7 @@ const SingleProduct = ({ prod }) => {
     dispatch,
   } = CartState();
 
+
   return (
     <div className="products">
       <Card>
@@ -53,5 +54,7 @@ const SingleProduct = ({ prod }) => {
     </div>
   );
 };
+
+
 
 export default SingleProduct;
